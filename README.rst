@@ -77,8 +77,6 @@ the two is drastic. ``tshelve`` operations
 were, on average, nearly 44% faster than those
 found in the  `shelve <https://docs.python.org/3/library/shelve.html#module-shelve>`_ module.
 
--
-
 Example
 --------------
 
