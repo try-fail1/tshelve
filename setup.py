@@ -3,14 +3,6 @@ import re
 import setuptools
 
 
-def get_version():
-    local = pathlib.Path(__file__).parent / 'README.rst'
-    versioning = re.search(
-        r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
-        local.read_text(), re.MULTILINE
-        ).group(1)
-    return versioning
-
 
 def get_long():
     return (pathlib.Path(__file__).parent / 'README.rst').read_text()
