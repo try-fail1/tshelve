@@ -4,12 +4,10 @@ import setuptools
 
 
 def get_version():
-    local = pathlib.Path(__file__).parent / 'README.rst'
-    versioning = re.search(
-        r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
-        local.read_text(), re.MULTILINE
-        ).group(1)
-    return versioning
+    local = pathlib.Path(__file__).parent / 'tshelve'/ '__init__.py'
+    version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', local.read_text(), re.MULTILINE
+    ).group(1)
+    return version
 
 
 def get_long():

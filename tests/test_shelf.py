@@ -16,4 +16,5 @@ class Tester(unittest.TestCase):
         with self.internal as f:
             self.assertIsInstance(f, tshelve.TShelf)
 
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()

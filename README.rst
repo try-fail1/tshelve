@@ -29,8 +29,18 @@ Benefits
 -------------
 
 * A more meaningful `repr <https://docs.python.org/3/library/functions.html#repr>`_:
-    ``shelve``: ``'<shelve.Shelf object at 0x00572CB8>'``
-    ``tshelve.TShelf``: ``TShelf(dict={}, protocol=5, writeback=False, keyencoding='utf-8')``
+    
+    The default ``repr``:
+
+    .. code-block:: python
+        
+        repr(shelve.Shelf({}) == '<shelve.Shelf object at 0x00572CB8>'
+    
+    ``tshelve``'s ``repr``:
+
+    .. code-block:: python
+    
+        repr(tshelve.TShelf({})) == TShelf(dict={}, protocol=5, writeback=False, keyencoding='utf-8')
 
 * Similar to the shelve module in the standard library.
 
