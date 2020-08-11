@@ -29,6 +29,7 @@ Benefits
 -------------
 
 * A more meaningful `repr <https://docs.python.org/3/library/functions.html#repr>`_:
+<<<<<<< HEAD
     
     The default ``repr``:
 
