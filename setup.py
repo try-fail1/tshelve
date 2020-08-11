@@ -10,6 +10,7 @@ def get_version():
     return version
 
 
+
 def get_long():
     return (pathlib.Path(__file__).parent / 'README.rst').read_text()
 
